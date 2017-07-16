@@ -1,0 +1,1 @@
+﻿var EmpAppAJ = angular.module('EmpAppAJ', []);

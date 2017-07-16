@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br/>
+<p style="color:#808080; font-size:large">
+    AngularJS is written in  MVC code<br/>
+    Created three JavaScript files as following<br />
+    AJController.js<br />
+    AJModule.js<br />
+    AJServices.js<br />
+</p>
+
+<div ng-app="EmpAppAJ">
+    <div ng-controller="EmpAJController">
+        <div style="float:left;">
+            <h1>
+                {{MessageAJ}}
+            </h1>
+          
+            <label>Search Employees by Id, First or Last Name</label> <input type="text" placeholder="Search Employee" ng-model="searchEmployee" />
+            <br /><br />
+
+            <table class="table table-bordered">
+                <tr>
+                    <th style="width:30px;"><input type="checkbox" name="" ng-model="selectAll" ng-click="checkAll()" /><br />Select/Deselect All</th>
+                    <th>ID</th>
+                    <th>FirstName</th>
+                    <th>FirstName</th>
+                </tr>
+                <tr ng-repeat="r in AJEmployees | filter : searchEmployee" ng-class-even="'odd'" ng-class-odd="'even'">
+                    <td><input type="checkbox" name="" ng-model="selected" ng-checked="exist(r)" ng-click="toggleSelection(r)" /></td>
+                    <td>{{r.ID}}</td>
+                    <td>{{r.FirstName}}</td>
+                    <td>
+                        {{r.LastName}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="selectedcontent" style="float:left; margin:7px 0 0 10px;" ng-show="selected.length">
+            <h1> Selected Employee Names</h1><br/><br/>
+            <table class="table table-bordered">
+                <tr>
+                    <th>ID</th>
+                    <th>FirstName</th>
+                    <th>FirstName</th>
+                </tr>
+                <tr ng-repeat="selectedName in selected | filter : searchEmployee" ng-class-even="'odd'" ng-class-odd="'even'">
+                    <td>{{selectedName.ID}}</td>
+                    <td>{{selectedName.FirstName}}</td>
+                    <td>
+                        {{selectedName.LastName}}
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+</div></div>
+@section scripts{
+<script src="~/Scripts/app/AJModule.js"></script>
+<script src="~/Scripts/app/AJServices.js"></script>
+<script src="~/Scripts/app/AJController.js"></script>
+}

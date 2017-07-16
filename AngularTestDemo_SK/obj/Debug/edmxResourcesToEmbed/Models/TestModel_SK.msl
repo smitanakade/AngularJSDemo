@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tempdbModelStoreContainer" CdmEntityContainer="tempdbEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="tempdbModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="ClockcardEnabled" ColumnName="ClockcardEnabled" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="RemoteLogin" ColumnName="RemoteLogin" />
+          <ScalarProperty Name="ProntoLoginId" ColumnName="ProntoLoginId" />
+          <ScalarProperty Name="RFLoginId" ColumnName="RFLoginId" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="SortBy" ColumnName="SortBy" />
+          <ScalarProperty Name="IsFirstAidA" ColumnName="IsFirstAidA" />
+          <ScalarProperty Name="IsLeadHandA" ColumnName="IsLeadHandA" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ClassificationId" ColumnName="ClassificationId" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
