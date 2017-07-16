@@ -17,21 +17,6 @@ namespace AngularTestDemo_SK.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public Nullable<System.DateTime> HireDate { get; set; }
-        public string Job { get; set; }
-        public string Sex { get; set; }
-        public Nullable<System.DateTime> BirthDate { get; set; }
-        public Nullable<int> ClassificationId { get; set; }
         public Nullable<int> IsActive { get; set; }
-        public Nullable<int> IsLeadHandA { get; set; }
-        public Nullable<int> IsFirstAidA { get; set; }
-        public Nullable<int> SortBy { get; set; }
-        public string ShortName { get; set; }
-        public string LoginId { get; set; }
-        public string RFLoginId { get; set; }
-        public string ProntoLoginId { get; set; }
-        public Nullable<bool> RemoteLogin { get; set; }
-        public string CountryCode { get; set; }
-        public bool ClockcardEnabled { get; set; }
     }
 }

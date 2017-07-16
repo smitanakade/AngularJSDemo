@@ -198,37 +198,51 @@
     <Compile Include="Controllers\EmployeeAJController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\Emp.cs" />
+    <Compile Include="Models\empDBlocal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empDBlocal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\empDBlocal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empDBlocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\empDBlocal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empDBlocal.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Employee.cs">
-      <DependentUpon>TestModel_SK.tt</DependentUpon>
+      <DependentUpon>empDBlocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="Models\TestModel_SK.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestModel_SK.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TestModel_SK.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestModel_SK.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TestModel_SK.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestModel_SK.edmx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\EmpDB.mdf" />
+    <Content Include="App_Data\EmpDB_log.ldf">
+      <DependentUpon>EmpDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\empDBlocal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>empDBlocal.edmx</DependentUpon>
+      <LastGenOutput>empDBlocal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\empDBlocal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>empDBlocal.edmx</DependentUpon>
+      <LastGenOutput>empDBlocal.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\app\AJController.js" />
     <Content Include="Scripts\app\AJModule.js" />
     <Content Include="Scripts\app\AJServices.js" />
@@ -280,6 +294,13 @@
     <Content Include="Scripts\angular-cookies.min.js.map" />
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
+    <EntityDeploy Include="Models\empDBlocal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>empDBlocal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\empDBlocal.edmx.diagram">
+      <DependentUpon>empDBlocal.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
@@ -1021,16 +1042,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Models\TestModel_SK.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TestModel_SK.edmx</DependentUpon>
-      <LastGenOutput>TestModel_SK.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\TestModel_SK.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TestModel_SK.edmx</DependentUpon>
-      <LastGenOutput>TestModel_SK.cs</LastGenOutput>
-    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1045,18 +1056,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Scripts\version.json" />
-    <EntityDeploy Include="Models\TestModel_SK.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TestModel_SK.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TestModel_SK.edmx.diagram">
-      <DependentUpon>TestModel_SK.edmx</DependentUpon>
-    </Content>
     <Content Include="Views\EmployeeAJ\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

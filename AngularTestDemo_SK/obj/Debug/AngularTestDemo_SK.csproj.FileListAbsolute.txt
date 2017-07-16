@@ -77,6 +77,6 @@ C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\An
 C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\obj\Debug\AngularTestDemo_SK.csprojResolveAssemblyReference.cache
 C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\obj\Debug\AngularTestDemo_SK.dll
 C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\obj\Debug\AngularTestDemo_SK.pdb
-C:\Users\smite.kagde\Documents\Visual Studio 2015\Projects\AngularTestDemo_SK\AngularTestDemo_SK\obj\Debug\AngularTestDemo_SK.csprojResolveAssemblyReference.cache
